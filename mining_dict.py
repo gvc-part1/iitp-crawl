@@ -1,30 +1,7 @@
 # 패키지 import
 
 import pandas as pd
-import re
-import itertools
-import os
 import json
-
-import math
-import numpy as np
-
-from lxml import html
-
-from pathlib import Path
-
-from nltk.tokenize import sent_tokenize
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
-from nltk.corpus import wordnet as wn
-from nltk.stem import WordNetLemmatizer
-
-lemmatizer = WordNetLemmatizer()
-
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.utils import to_categorical
-
-from tqdm import tqdm
 
 
 
