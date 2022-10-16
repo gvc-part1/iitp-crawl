@@ -1,0 +1,5 @@
+pandas
+requests
+lxml
+tqdm
+undetected-chromedriver
