@@ -1,7 +1,6 @@
 # IITP 크롤러
 
-뉴스 기사를 크롤링하는 프로그램입니다.
-bloomberg.com, investing.com, mining.com 3가지 사이트에 대한 크롤러입니다.
+bloomberg.com, investing.com, mining.com 뉴스 기사를 크롤링하는 python code입니다.
 
 ## 설치법
 
@@ -20,9 +19,9 @@ pip install -r requirements.txt
 4. 실행\
    각 크롤러에 맞게 명령줄을 입력
 
-## Bloomberg 크롤러
+##(1) Bloomberg 크롤러
 
-지정한 연도-달의 모든 Bloomberg 뉴스 기사를 수집하여 bloomberg_crawl.json 파일로 결과를 저장합니다.
+지정한 연도-달의 모든 Bloomberg 뉴스 기사를 수집하여 bloomberg_crawl.json 파일로 결과를 저장
 
 ## 실행법
 
@@ -48,11 +47,11 @@ body: 기사 텍스트
 ### 데이터 예시
 ![bloomberg_df](https://user-images.githubusercontent.com/101622378/196018537-9bc0c224-5d01-4259-b673-c45d830d0fa7.PNG)
 
-만일 기사 크롤링이 잘 진행되지 않는다면, [1.1.1.1 WARP](https://1.1.1.1) 등의 VPN 서비스를 사용하세요.
+※ 만일 기사 크롤링이 잘 진행되지 않는다면, [1.1.1.1 WARP](https://1.1.1.1) 등의 VPN 서비스를 사용을 추천
 
-## Investing 크롤러
+##(2) Investing 크롤러
 
-지정한 페이지까지의 copper 관련 모든 investing.com 뉴스 기사를 수집하여 investing_crawl.json 파일로 결과를 저장합니다.
+지정한 페이지까지의 copper 관련 모든 investing.com 뉴스 기사를 수집하여 investing_crawl.json 파일로 결과를 저장
 
 ## 실행법
 
@@ -74,9 +73,9 @@ body: 기사 텍스트
 ### 데이터 예시
 ![investing_df](https://user-images.githubusercontent.com/101622378/196018541-fd4c0e92-9620-42db-92ab-c81169821314.PNG)
 
-## Mining 크롤러
+## (3) Mining 크롤러
 
-지정한 페이지까지의 copper 관련 모든 mining.com 뉴스 기사를 수집하여 mining_crawl.json 파일로 결과를 저장합니다.
+지정한 페이지까지의 copper 관련 모든 mining.com 뉴스 기사를 수집하여 mining_crawl.json 파일로 결과를 저장
 
 ## 실행법
 
