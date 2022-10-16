@@ -19,7 +19,7 @@ pip install -r requirements.txt
 4. 실행\
    각 크롤러에 맞게 명령줄을 입력
 
-##(1) Bloomberg 크롤러
+## (1) Bloomberg 크롤러
 
 지정한 연도-달의 모든 Bloomberg 뉴스 기사를 수집하여 bloomberg_crawl.json 파일로 결과를 저장
 
@@ -49,7 +49,7 @@ body: 기사 텍스트
 
 ※ 만일 기사 크롤링이 잘 진행되지 않는다면, [1.1.1.1 WARP](https://1.1.1.1) 등의 VPN 서비스를 사용을 추천
 
-##(2) Investing 크롤러
+## (2) Investing 크롤러
 
 지정한 페이지까지의 copper 관련 모든 investing.com 뉴스 기사를 수집하여 investing_crawl.json 파일로 결과를 저장
 
