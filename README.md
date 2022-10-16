@@ -46,8 +46,7 @@ category_sub: 기사 소분류\
 body: 기사 텍스트
 
 ### 데이터 예시
-
-![블룸버그 데이터 예시](bloomberg_df.png "블룸버그 데이터 예시")
+![bloomberg_df](https://user-images.githubusercontent.com/101622378/196018537-9bc0c224-5d01-4259-b673-c45d830d0fa7.PNG)
 
 만일 데이터 다운로드가 잘 이뤄지지 않는다면, [1.1.1.1 WARP](https://1.1.1.1) 등의 VPN 서비스를 사용하세요.
 
@@ -73,8 +72,7 @@ date: 기사 날짜\
 body: 기사 텍스트
 
 ### 데이터 예시
-
-![인베스팅 데이터 예시](investing_df.png "인베스팅 데이터 예시")
+![investing_df](https://user-images.githubusercontent.com/101622378/196018541-fd4c0e92-9620-42db-92ab-c81169821314.PNG)
 
 ## Mining 크롤러
 
@@ -98,5 +96,4 @@ date: 기사 날짜\
 body: 기사 텍스트
 
 ### 데이터 예시
-
-![마이닝 데이터 예시](mining_df.png "마이닝 데이터 예시")
+![mining_df](https://user-images.githubusercontent.com/101622378/196018547-4733b124-a88d-44f7-b6fc-bdc8456902ec.PNG)
