@@ -138,9 +138,9 @@ class Bloomberg():
         except:
             category_sub = None
         # 본문 텍스트 수집
-        body_text_nodes = parser.xpath('//main//article//div[@class="body-content fence-body"]//p')
-        body = "\n".join(
-            [x.text_content().encode("ascii", "ignore").decode().replace(u"\u2018", "'").replace(u"\u2019", "'") for x in body_text_nodes]
+        body_text_nodes = parser.xpath('//main//article//div[contains(@class, "body-content")]//p')
+        body = " ".join(
+            [x.text_content().strip() for x in body_text_nodes]
         )
         if (not str(title) in self.df_prev.title.values) or self.df_prev.empty:
             self.df_list.append({
@@ -157,7 +157,7 @@ class Bloomberg():
 
     def save_df(self):
         df = pd.concat([self.df_prev, pd.DataFrame(self.df_list)], ignore_index=True)
-        df.to_json("./bloomberg_crawl.json", orient="records")
+        df.to_json("./bloomberg_crawl.json", orient="records", force_ascii=False)
 
 if __name__ == "__main__":
     bloom = Bloomberg()
