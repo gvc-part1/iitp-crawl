@@ -84,9 +84,6 @@ class Bloomberg():
                 return
             content = page.content()
             self.extract(content)
-
-
-            
         except KeyboardInterrupt:
             print('크롤링이 취소되었습니다.')
             try:
@@ -141,9 +138,9 @@ class Bloomberg():
         except:
             category_sub = None
         # 본문 텍스트 수집
-        body_text_nodes = parser.xpath('//main//article//div[@class="body-content"]//p')
+        body_text_nodes = parser.xpath('//main//article//div[@class="body-content fence-body"]//p')
         body = "\n".join(
-            [x.text_content().replace("\xa0", " ").encode("ascii", "ignore").decode().strip() for x in body_text_nodes]
+            [x.text_content().encode("ascii", "ignore").decode().replace(u"\u2018", "'").replace(u"\u2019", "'") for x in body_text_nodes]
         )
         if (not str(title) in self.df_prev.title.values) or self.df_prev.empty:
             self.df_list.append({
